@@ -2,7 +2,7 @@ import socket
 from pins import run_command
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.bind(('localhost', 5678))
+sock.bind(('', 5678))
 sock.listen(1)
 
 while True:
