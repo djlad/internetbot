@@ -8,7 +8,7 @@ def set_pin(pin_num, on_off):
         gpio.output(pin_name, int(on_off))
         gpio.cleanup(pin_name)
 
-def handle_commands(command):
+def handle_commands():
     while True:
             command = raw_input("command: ")
             commands = command.split(" ")
