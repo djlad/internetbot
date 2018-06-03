@@ -19,6 +19,7 @@ def handle_commands():
 
 def run_command(command):
     commands = command.split(" ")
+    print commands
     if commands[0] == 'l':
             set_pin(0, commands[1])
     if commands[0] == 'r':
