@@ -6,7 +6,8 @@ con = None
 try:
     sock = socket.socket()
     sock.connect(chip_address)
-    while True:
+    msg = ''
+    while msg != 'q':
         msg = raw_input('command wifi: ')
         sock.send(msg)
 finally:

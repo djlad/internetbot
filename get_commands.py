@@ -12,6 +12,7 @@ while True:
         print msg
         while msg != 'q':
             msg = con.recv(1024)
+            run_command(msg)
             print msg
     finally:
         con.close()
