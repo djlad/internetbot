@@ -7,7 +7,8 @@ class Pins():
         self.setupPins = set()
 
     def set_pin(self, pin_num, on_off):
-        pin_name = "XIO-P{}".format(pin_num)
+        # pin_name = "XIO-P{}".format(pin_num)
+        pin_name = "LCD-D{}".format(pin_num)
         if not pin_name in self.setupPins:
                 gpio.setup(pin_name, gpio.OUT)
         gpio.output(pin_name, int(on_off))
